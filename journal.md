@@ -39,3 +39,18 @@ If precipitation increases by X mm, how much would drought severity improve?
 If reservoir levels drop by 10%, what is the expected effect on drought worsening?
 What would happen if soil moisture dropped 20% but temperature stayed stable?
 
+3/9/25 Aimee expanding on models to use and related works examined
+The first models we could think about fitting on the data we have found (other than shortn term prediction and LSTM):
+Related Works and models we could think about fitting based on works:
+1). Drought in Australia: https://www.nature.com/articles/s41598-024-70406-6
+  - Soft computing models + AI: DT, GLM, SVM, ANN, DL, and RF
+  - Decision trees, support vector machine, random forest
+  - Artificial neural network
+2). Missouri/Columbia basins: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023WR036973?af=R
+  - Build complex relationships between predictor data sets and multi-layer SM measurements from the Montana Mesonet
+  - Predicted with 1-2 week forecast lead times
+  - Measured accuracy with 2017 Montana flash drought
+  - Used random forest and light gradient boosting machine regression
+3). Tanzania: https://www.sciencedirect.com/science/article/pii/S2214581824001423#sec0010
+  - LSTM
+
