@@ -1,3 +1,9 @@
+3/28/2024 Progress Report
+Busy week with big homeworks and midterms:
+1. data is hard to download/examine due to government data (may need to download in batches)
+2. [Light Gradient Boosting Machine (LightGBM)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL111134?af=R#:~:text=Of%20which%2C%20soil%20moisture%20is,.%2C%202019%2C%202023) is also a viable model --> we probably will run multiple models and compare accuracy. We tentatively propose also discovering causation of flash drought after prediction.
+3. In terms of prediction, we want to take one year of data to predict about one week forecast and a longer previous period of time to predict two weeks of forecast if possible.
+
 3/5/2024 Audrey 
 Responding to the feedback received on 2/28 on the data details, and what models we're considering to use first. 
 
