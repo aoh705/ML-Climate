@@ -1,3 +1,6 @@
+4/10 and 4/13
+Trained LSTM with PRISM data, San Bernardino County drought data, and water shortage data. Get accuracy of 0.9 at most. Next steps should be adding data for temperature, humidity, etc. to add features to predict drought. Commits have been made in `data.py` for retrieving PRISM data and `model.ipynb` for examining, pre-processing data and training data.
+
 3/28/2024 Progress Report
 Busy week with big homeworks and midterms:
 1. data is hard to download/examine due to government data (may need to download in batches)
