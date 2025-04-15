@@ -7,6 +7,21 @@ Busy week with big homeworks and midterms:
 2. [Light Gradient Boosting Machine (LightGBM)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL111134?af=R#:~:text=Of%20which%2C%20soil%20moisture%20is,.%2C%202019%2C%202023) is also a viable model --> we probably will run multiple models and compare accuracy. We tentatively propose also discovering causation of flash drought after prediction.
 3. In terms of prediction, we want to take one year of data to predict about one week forecast and a longer previous period of time to predict two weeks of forecast if possible.
 
+3/9/25 Aimee expanding on models to use and related works examined
+The first models we could think about fitting on the data we have found (other than shortn term prediction and LSTM):
+Related Works and models we could think about fitting based on works:
+1). Drought in Australia: https://www.nature.com/articles/s41598-024-70406-6 :
+- Soft computing models + AI: DT, GLM, SVM, ANN, DL, and RF
+- Decision trees, support vector machine, random forest
+- Artificial neural network
+2). Missouri/Columbia basins: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023WR036973?af=R :
+- Build complex relationships between predictor data sets and multi-layer SM measurements from the Montana Mesonet
+- Predicted with 1-2 week forecast lead times
+- Measured accuracy with 2017 Montana flash drought
+- Used random forest and light gradient boosting machine regression
+3). Tanzania: https://www.sciencedirect.com/science/article/pii/S2214581824001423#sec0010 :
+- LSTM
+
 3/5/2024 Audrey 
 Responding to the feedback received on 2/28 on the data details, and what models we're considering to use first. 
 
@@ -47,19 +62,4 @@ Causal Questions (I'm not sure if this type of variable isolation is the way to 
 If precipitation increases by X mm, how much would drought severity improve?
 If reservoir levels drop by 10%, what is the expected effect on drought worsening?
 What would happen if soil moisture dropped 20% but temperature stayed stable?
-
-3/9/25 Aimee expanding on models to use and related works examined
-The first models we could think about fitting on the data we have found (other than shortn term prediction and LSTM):
-Related Works and models we could think about fitting based on works:
-1). Drought in Australia: https://www.nature.com/articles/s41598-024-70406-6 :
-- Soft computing models + AI: DT, GLM, SVM, ANN, DL, and RF
-- Decision trees, support vector machine, random forest
-- Artificial neural network
-2). Missouri/Columbia basins: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023WR036973?af=R :
-- Build complex relationships between predictor data sets and multi-layer SM measurements from the Montana Mesonet
-- Predicted with 1-2 week forecast lead times
-- Measured accuracy with 2017 Montana flash drought
-- Used random forest and light gradient boosting machine regression
-3). Tanzania: https://www.sciencedirect.com/science/article/pii/S2214581824001423#sec0010 :
-- LSTM
 
