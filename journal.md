@@ -1,3 +1,9 @@
+4/14 Audrey and Aimee To Dos:
+1. download more historical PRISM data (before 2019 (2000) and groundwater level data for San Bernardino, CA ([link to data](https://nwis.waterdata.usgs.gov/ca/nwis/dv?county_cd=06071&format=csv&site_status=all&referred_module=gw&begin_date=2000-01-01&end_date=2025-04-13&list_of_search_criteria=county_cd%2Crealtime_parameter_selection&range_selection=date_range))
+2. download yearly predictive temperature and precipitation values yearly for San Bernardino, CA
+3. Work out hypotheses for future predictions (day context, weekly context, yearly context)
+4. use DoWhy for coding up DAG and finding possible causational features for drought in San Bernardino, CA
+
 4/10 and 4/13:
 Trained LSTM with PRISM data, San Bernardino County drought data, and water shortage data. Get accuracy of 0.9 at most. Next steps should be adding data for temperature, humidity, etc. to add features to predict drought. Commits have been made in `data.py` for retrieving PRISM data and `model.ipynb` for examining, pre-processing data and training data.
 
