@@ -1,3 +1,13 @@
+4/21 Clarifying Definitions
+The California Department of Water Resources’s Climate Change Technical Advisory Group reduced the larger ensemble of 32 GCMs to a more manageable set of 10 GCMs as being most suitable for California water resource climate change studies. For some study teams and users of California’s Fourth Climate Change Assessment data, even the previously identified set of 10 GCMs was too much data. Accordingly, 4 of those 10 GCMs were identified whose project future climate can be described as producing:
+
+A “warmer/drier” simulation (HadGEM2-ES)
+An “average” simulation (CanESM2)
+A “cooler/wetter” simulation (CNRM-CM5)
+A “dissimilar” simulation that is most unlike the other three, to produce maximal coverage of possible future climate conditions (MIROC5)
+Simulations produced with all climate models show substantial future warming; the “cooler/wetter” CNRM-CM5 simulation just shows less warming than the other models. The GCMs projections hosted on Cal-Adapt were generated for the periods 2006 to 2100 (future climate) and 1950 to 2005 (modeled historical climate).
+
+
 4/20 Update: 
 - Data gathered for the mid and late century prediction (2006-2099) from the Cal-Adapt climate models for air temperature, rainfall, snowfall, and baseflow (still searching for dew point if possible). Ensemble of model predictions selected, specifically CanESM2 (average simulation), CNRM-CM5 (cool/wet simulation), HadGEM2-ES (warm/dry simulation), MIROC5 (dissimilar to all other simulations to cover all possible climates) at RCP 4.5 (medium emissions, peaking at 2040) and 8.5 (zero mitigation state emission rate rises throughout end of 21st century), all projections at monthly increments. This is intended for later testing the predictive model. After reading some more papers on drought types and definitions, (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023WR034994 and https://www.sciencedirect.com/science/article/pii/S0048969724002675), I'm defining the specifics of flash vs meteorological vs hydrological droughts (usually distinguished by length of drought and characteristics temperature and radiation, though we don't include radiation data in our own model at the moment). While San Bernardino was chosen because it has multiple drought characteristics across the county (D1-D4), the data for precipitation, etc are not spatially divided, so categorizing the drought labels (flash/meteorological/hydrological) in the historical data is currently processing so we can have those predictions for the future as well. These characterizations, which can be determined once we have the initial D0-D4 predictions, will guide the interpretation of future predictions in terms of their impact, especially agriculturally. 
 
