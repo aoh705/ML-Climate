@@ -1,3 +1,11 @@
+4/22 More Data cleanup
+- PRISM Data extracted again for better values + more variables.
+- Since PRISM Data is of the entire US, the geographical information / boundary of Southern California will be extracted and then the values for each variable (geographical information is separate for each variable) will be extracted and input into a dataframe to be transformed into a csv file for value prediction
+- groundwater data also collected from USGS site
+- groundwater data is daily -- will average ft^3/s groundwater per day from all site and then average for the entire month
+- all data are from 1950-2024
+- Drought data from US Drought Monitor for San Bernardino County was created by combining monitored/observed drought data with predicted historical data from 1950-1999.
+
 4/21 Clarifying Definitions
 The California Department of Water Resources’s Climate Change Technical Advisory Group reduced the larger ensemble of 32 GCMs to a more manageable set of 10 GCMs as being most suitable for California water resource climate change studies. For some study teams and users of California’s Fourth Climate Change Assessment data, even the previously identified set of 10 GCMs was too much data. Accordingly, 4 of those 10 GCMs were identified whose project future climate can be described as producing:
 
