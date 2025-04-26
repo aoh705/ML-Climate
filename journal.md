@@ -1,3 +1,15 @@
+4/25 Model predictions
+- using loca-vic 2025-2099 data for snowfall, snowwater equivalent, evapotranspiration, rainfall, runoff, baseflow, and air temperature to predict D0-D4 levels
+- because model training performed well due to D0-D4 lag and rolled mean/std values, we're trying to recursively predict each row of the input data using both the input features and historical D0-D4 lag and rolled mean/std values. This is done by keeping a dataframe of the most recent 7 months of D0-D4 predictions/data and using those values to calculate the lag and rolled mean/std values.
+- QUESTION/ROADBLOCK: We're getting errors for this, and it almost works, but we have problems with scaling/transformed data such that it fits the stacked model input format. Should we continue down this path given it's been difficult to get the stacked model to work through this process or should we train differently so that we actually calculate lag and rolled mean/std on the non-D0-D4 values? This way we don't have to predict by input row and keep track of a 7-month history of D0-D4 values.
+
+4/23 Model training
+- Used loca-vic and livneh-vic data for 1950-2024 historical/predicted data for snowfall, snowwater equivalent, evapotranspiration, rainfall, runoff, baseflow, and air temperature
+- ensured livneh-vic data was monthly (took the mean of all values in the month)
+- collected drought data and made monthly through mean
+- trained lstm, xgboost, and random forest. We had some trouble getting good r^2 values, but we figured out that it was because the 'date' column was not being treated as temporal data (so had to do `pd.to_datetime`). We also added lag to all drought levels to account for the time-
+- `D4` prediction values are not as close to true values for `D0-D3`, which is probably due to the fact that `D4` is mostly `0`s and thus do not provide enough data to train the model. I consider it a success that we have made the r^2 value above 0.
+  
 4/22 More Data cleanup
 - PRISM Data extracted again for better values + more variables.
 - Since PRISM Data is of the entire US, the geographical information / boundary of Southern California will be extracted and then the values for each variable (geographical information is separate for each variable) will be extracted and input into a dataframe to be transformed into a csv file for value prediction
