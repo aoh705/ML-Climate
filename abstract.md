@@ -1,12 +1,7 @@
 # ML-Climate
 
  Updated Abstract: 
-Our project focuses on predicting drought in the Southern Californian county, San Bernaradino, using the U.S. Drought Monitor's (USDM) scale of drought categories (D0-no drought to D4-extreme drought). Our process for this will include gathering both meteorological and hydrological data that could serve as drought indicators, along with existing drought labels for the time period of 1950-2024. Currently, those variables include precipitation, rainfall, snowfall, snow water equivalent, baseflow, runoff, air temperature, evapotranspiration, 
-
-We plan to train a model 
-
-
-The frequency of prolonged periods of rought in California has led to the U.S. Drought Monitor (USDM) 
+Our project focuses on predicting drought in the Southern Californian county, San Bernaradino, using the U.S. Drought Monitor's (USDM) scale of drought categories (D0-no drought to D4-extreme drought). Our process for this will include gathering both meteorological and hydrological data that could serve as drought indicators, along with existing drought labels for the time period of 1950-2024. Currently, those variables include rainfall, snowfall, snow water equivalent, baseflow, runoff, air temperature, evapotranspiration, and soil moisture. Based on these 8 variables, we plan to train a model to predict the drought labels of San Bernardino for the years 2025-2099. This can be done thanks to data gathered from single climate model predictions for each of the individual variables, which provide the "future climate" till the end of the 21st century. There are several future climate simulations done, including whether the climate remains as is, gets wetter and cooler, warmer and drier, and whether or not human emission levels do manage to plateau through the mid-century or not. We plan on graphing these predictions in order to determine whether drought in San Bernardino is a cyclical process of dry-wet periods, if patterns repeat themselves from the 20th to the 21st century, and to determine the impact of human emissions on drought: do these drought periods become longer and more intense? Our current thoughts are that the emissions will indeed play a role in the intensifying of droughts, and that lower or plateauing emissions might mitigate a drastic increase in drought status. 
 
 
 Previoust Project Proposal:
