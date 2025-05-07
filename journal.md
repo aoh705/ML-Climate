@@ -1,3 +1,9 @@
+5/6 
+- Using TreeFuser and RF to get future predictions, as well as graphing these future predictions to inspect data for cyclical patterns. 
+
+4/27 
+Presentation made with all currently updated findings. 
+
 4/25 Model predictions
 - using loca-vic 2025-2099 data for snowfall, snowwater equivalent, evapotranspiration, rainfall, runoff, baseflow, and air temperature to predict D0-D4 levels
 - because model training performed well due to D0-D4 lag and rolled mean/std values, we're trying to recursively predict each row of the input data using both the input features and historical D0-D4 lag and rolled mean/std values. This is done by keeping a dataframe of the most recent 7 months of D0-D4 predictions/data and using those values to calculate the lag and rolled mean/std values.
