@@ -3,29 +3,29 @@
 
 MODEL PERFORMANCE SUMMARY:
 D0 Regression Performance:
-  R² Score: 0.8289
-  MAE: 10.2464
-  RMSE: 15.5800
+  R² Score: 0.8277
+  MAE: 10.2977
+  RMSE: 15.6383
 
 D1 Regression Performance:
-  R² Score: 0.7974
-  MAE: 10.0004
-  RMSE: 15.7598
+  R² Score: 0.8008
+  MAE: 9.8786
+  RMSE: 15.6222
 
 D2 Regression Performance:
-  R² Score: 0.6863
-  MAE: 7.8588
-  RMSE: 13.9252
+  R² Score: 0.6810
+  MAE: 7.8479
+  RMSE: 14.0169
 
 D3 Regression Performance:
-  R² Score: 0.6388
-  MAE: 4.7246
-  RMSE: 10.4028
+  R² Score: 0.6351
+  MAE: 4.6817
+  RMSE: 10.4150
 
 D4 Regression Performance:
-  R² Score: -0.0139
-  MAE: 2.4586
-  RMSE: 7.0389
+  R² Score: -0.0072
+  MAE: 2.4602
+  RMSE: 6.9818
 
 D4 Binary Classification Performance:
   Accuracy: 0.8703
@@ -45,4 +45,4 @@ All predictions, visualizations, and performance metrics have been saved to the 
 
 Drought prediction model completed successfully.
 
-Total execution time: 3494.22 seconds (58.24 minutes)
+Total execution time: 3198.23 seconds (53.30 minutes)
