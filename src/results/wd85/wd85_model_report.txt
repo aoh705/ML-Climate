@@ -1,0 +1,47 @@
+
+===== DROUGHT PREDICTION MODEL PERFORMANCE REPORT =====
+
+MODEL PERFORMANCE SUMMARY:
+D0 Regression Performance:
+  R² Score: 0.8287
+  MAE: 10.2373
+  RMSE: 15.5879
+
+D1 Regression Performance:
+  R² Score: 0.8000
+  MAE: 9.8877
+  RMSE: 15.6549
+
+D2 Regression Performance:
+  R² Score: 0.6848
+  MAE: 7.8927
+  RMSE: 13.9542
+
+D3 Regression Performance:
+  R² Score: 0.6329
+  MAE: 4.6976
+  RMSE: 10.4873
+
+D4 Regression Performance:
+  R² Score: -0.0160
+  MAE: 2.4590
+  RMSE: 6.9978
+
+D4 Binary Classification Performance:
+  Accuracy: 0.8703
+  Precision: 0.4433
+  Recall: 0.4261
+  F1 Score: 0.4328
+
+VISUALIZATION AND RESULTS:
+All predictions, visualizations, and performance metrics have been saved to the results directory:
+- future_drought_predictions.csv: Predicted drought indices
+- future_drought_predictions_with_binary.csv: Predictions with binary classification
+- performance_metrics.json: Detailed performance metrics
+- drought_predictions.png: Time series visualizations
+- drought_predictions_uncertainty.png: Uncertainty visualization
+- d4_binary_classification.png: D4 classification analysis
+
+Drought prediction model completed successfully.
+
+Total execution time: 246.85 seconds (4.11 minutes)
