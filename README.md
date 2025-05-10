@@ -3,6 +3,7 @@
 ## Aimee Oh and Audrey Leong
 
 ### Directory Format
+```bash
 ML-Climate/
 ├── README.md
 ├── abstract.md
@@ -53,6 +54,7 @@ ML-Climate/
     │   ├── eda/
     │   └── experiments/
     └── utils/
+```
 
 
 | Name          | Type        | Description                                                                 |
