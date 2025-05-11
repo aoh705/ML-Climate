@@ -6,6 +6,7 @@
 1. `data_and_model_trial.ipynb` should be run in full.
 2. `droughtpredictor.py` should be run.
 3. Run `model_{avg, wc, wd}{45, 85}.ipynb` after restarting the kernel.
+4. Run `graph.ipynb` in full
 
 ### Directory Format
 | Name          | Type        | Description                                                                 |
