@@ -2,6 +2,11 @@
 
 ## Aimee Oh and Audrey Leong
 
+### Instructions on Using the Code
+1. `data_and_model_trial.ipynb` should be run in full.
+2. `droughtpredictor.py` should be run in terminal as `python3 droughtpredictor.py`.
+3. Run `model_{avg, wc, wd}{45, 85}.ipynb` after restarting the kernel.
+
 ### Directory Format
 ```bash
 ML-Climate/
@@ -41,13 +46,13 @@ ML-Climate/
     │   ├── SB_historical_drought.csv
     │   ├── drought_plots/
     │   └── results/
-    │   │   ├── RF
-    │   │   ├── avg45
-    │   │   ├── avg85
-    │   │   ├── wc45
-    │   │   ├── wc85
-    │   │   ├── wd45
-    │   │   ├── wd85
+    │   │   ├── RF/
+    │   │   ├── avg45/
+    │   │   ├── avg85/
+    │   │   ├── wc45/
+    │   │   ├── wc85/
+    │   │   ├── wd45/
+    │   │   ├── wd85/
     │   │   └──  ...
     │   └── ...
     ├── notebooks/
