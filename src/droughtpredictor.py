@@ -6,7 +6,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.model_selection import TimeSeriesSplit
-import warnings
 import time
 import json
 import os
@@ -25,11 +24,11 @@ try:
     TREEFFUSER_AVAILABLE = True
 except ImportError:
     TREEFFUSER_AVAILABLE = False
-    print("TreeFFuser not available. Will use RandomForest as fallback.")
+    print("TreeFFuser not available. Will use RandomForest.")
 
 class DroughtPredictor:
     """
-    A class to predict drought indices using TreeFFuser (or RandomForest as fallback).
+    A class to predict drought indices using TreeFFuser (or RandomForest).
     
     This class handles data preprocessing, feature engineering, model training,
     and prediction for drought indices D0-D4 using historical climate data.
@@ -40,7 +39,6 @@ class DroughtPredictor:
         Initialize the DroughtPredictor.
         
         Parameters:
-        -----------
         min_year : int
             Minimum year to include in historical data
         max_year : int
@@ -101,14 +99,12 @@ class DroughtPredictor:
         Load historical and future data from CSV files.
         
         Parameters:
-        -----------
         historical_file : str
             Path to historical data CSV
         future_file : str
             Path to future data CSV
             
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -166,7 +162,6 @@ class DroughtPredictor:
         Create enhanced lag features for the target columns.
         
         Parameters:
-        -----------
         df : DataFrame
             DataFrame with time-indexed data
         target_cols : list
@@ -177,7 +172,6 @@ class DroughtPredictor:
             Method to fill missing values ('monthly_mean' or 'forward_fill')
             
         Returns:
-        --------
         DataFrame
             DataFrame with added features
         """
@@ -243,7 +237,6 @@ class DroughtPredictor:
         Apply feature engineering to historical data.
         
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -303,7 +296,6 @@ class DroughtPredictor:
         Analyze feature importance using Random Forest.
         
         Parameters:
-        -----------
         X : DataFrame or array
             Feature matrix
         y : Series or array
@@ -314,7 +306,6 @@ class DroughtPredictor:
             Number of top features to print
             
         Returns:
-        --------
         tuple
             Sorted feature indices and their importance values
         """
@@ -337,7 +328,6 @@ class DroughtPredictor:
         Run feature importance analysis and select features for each target.
         
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -375,7 +365,6 @@ class DroughtPredictor:
         Train a TreeFFuser model with proper handling of data types.
         
         Parameters:
-        -----------
         X : DataFrame or array
             Feature matrix
         y : Series or array
@@ -384,7 +373,6 @@ class DroughtPredictor:
             Name of the target column (for logging)
             
         Returns:
-        --------
         model : Treeffuser or RandomForestRegressor
             Trained model
         """
@@ -448,12 +436,10 @@ class DroughtPredictor:
         Perform time series cross-validation.
         
         Parameters:
-        -----------
         n_splits : int
             Number of CV splits
             
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -656,7 +642,6 @@ class DroughtPredictor:
         Train final models on the entire dataset.
         
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -709,7 +694,6 @@ class DroughtPredictor:
         Make autoregressive predictions with domain knowledge constraints.
         
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -936,7 +920,6 @@ class DroughtPredictor:
         Create visualizations of results.
         
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -1081,7 +1064,6 @@ class DroughtPredictor:
         Create uncertainty visualizations using a robust bootstrap method.
         
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """
@@ -1159,15 +1141,12 @@ class DroughtPredictor:
         Generate a comprehensive report of model performance and predictions.
         
         Returns:
-        --------
         str
             Text report
         """
-        self.print_section("FINAL REPORT")
+        self.print_section("PERFORMANCE")
         
         report = """
-===== DROUGHT PREDICTION MODEL PERFORMANCE REPORT =====
-
 MODEL PERFORMANCE SUMMARY:
 """
         
@@ -1183,19 +1162,6 @@ MODEL PERFORMANCE SUMMARY:
         report += f"  Precision: {self.avg_d4_binary['precision']:.4f}\n"
         report += f"  Recall: {self.avg_d4_binary['recall']:.4f}\n"
         report += f"  F1 Score: {self.avg_d4_binary['f1']:.4f}\n\n"
-        
-        report += """
-VISUALIZATION AND RESULTS:
-All predictions, visualizations, and performance metrics have been saved to the results directory:
-- future_drought_predictions.csv: Predicted drought indices
-- future_drought_predictions_with_binary.csv: Predictions with binary classification
-- performance_metrics.json: Detailed performance metrics
-- drought_predictions.png: Time series visualizations
-- drought_predictions_uncertainty.png: Uncertainty visualization
-- d4_binary_classification.png: D4 classification analysis
-
-Drought prediction model completed successfully.
-"""
         
         # Calculate execution time
         end_time = time.time()
@@ -1216,14 +1182,12 @@ Drought prediction model completed successfully.
         Run the complete drought prediction pipeline from data loading to report generation.
         
         Parameters:
-        -----------
         historical_file : str
             Path to historical data CSV
         future_file : str
             Path to future data CSV
             
         Returns:
-        --------
         self : DroughtPredictor
             Returns self for method chaining
         """

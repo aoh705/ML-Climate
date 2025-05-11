@@ -4,7 +4,7 @@
 
 ### Instructions on Using the Code
 1. `data_and_model_trial.ipynb` should be run in full.
-2. `droughtpredictor.py` should be run in terminal as `python3 droughtpredictor.py`.
+2. `droughtpredictor.py` should be run.
 3. Run `model_{avg, wc, wd}{45, 85}.ipynb` after restarting the kernel.
 
 ### Directory Format
@@ -73,9 +73,5 @@ ML-Climate/
 | `src/`        | Folder      | Main source code directory — includes models, scripts, and experiments.     |
 | `src/results/`| Folder      | Main results directory - includes model performance metrics and predictions based on climate and emission type |
 | `src/data/`   | Folder      | Main data directory - includes data extracted, augmented, downloaded, or created needed for training and predicting drought values |
-
-### Instructions on Using the Code
-1. `data_and_model_trial.ipynb` should be run in full.
-2. `droughtpredictor.py` should be run in terminal as `python3 droughtpredictor.py`.
-3. Run `model_<avg, wc, wd><45, 85>.ipynb` after restarting the kernel.
-4. `graph.ipynb` should be run in full. 
+| `src/data/lineh_vic/`   | Folder      | Directory that holds Livneh-VIC data from 1950-2013 |
+| `src/data/lineh_vic/`   | Folder      | Directory that holds Livneh-VIC data from 1950-2013 |
